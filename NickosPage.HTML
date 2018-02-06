@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1" /
+<link href="styles/custom.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="themes/NickosPageTheme.min.css" />
+<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+
+<script src="http://ajax.aspnetcdn.com/ajax/mobileservices/MobileServices.Web-1.2.5.min.js"></script>
+</head>
+
+
+</script>
+<title>Nicko's Page</title>
+<body bgcolor='purple'>
+<center><h1 style="color:yellow;"><i>Nicko's Favorite Sports Page</h1></center></i>
+<center>  <img src="http://philadelphiasportstable.com/wp-content/uploads/2013/06/NFL-LOGO-Tilted.jpg" alt="Mountain View" style="width:150px;height:200px;">
+<img src="http://jaredsandler.files.wordpress.com/2014/05/mlb-logo.jpg" alt="Mountain View" style="width:150px;height:200px;">
+<img src="http://2.bp.blogspot.com/_duISrNy-0QQ/TULsg-lSsfI/AAAAAAAAAUg/UdZ7clj_D_w/s1600/NHL_logo.jpg" alt="Mountain View" style="width:150px;height:200px;">
+<img src="http://www.vectorfans.com/wp-content/uploads/2013/08/NBA-Logo-Vector.jpg" alt="Mountain View" style="width:150px;height:200px;">
+<center><p>This is a list of my favorite Minnesota Sports Teams!</p></center>
+<center><p>By Nicko Sebolboro</p></center>
+<DIV align="left">
+<DIV style="color:yellow">
+
+	<div data-role="panel" id="myPanel">
+		<h2>Team Panel</h2>
+		<ul data-role="listview" data-theme="c">
+			<li class="menu"><a href="#">Minnesota Vikings</a></li>
+			<li class="menu"><a href="#">Minnesota Twins</a></li>
+			<li class="menu"><a href="#">Minnesota Wild</a></li>
+			<li class="menu"><a href="#">Minnesota Timberwolves</a></li>
+		</ul>
+		<p>You can close this panel by clicking outside of it, pressing the Esc key, or by swiping.</p>
+	</div>
+	<div data-role="header">
+		<h1>Nickos Page</h1>
+		<a href="#myPanel" class="ui-btn ui-btn-inline">Open Panel</a>
+	</div>
+
+
+
+<p1 style="green"</p1> What are you favorite Sports and Favorite Teams?</p>
+<form>
+Favorite Sport:<br/>
+Football <input type="checkbox"name="Football"/><br/>
+Baseball <input type="checkbox"name="Baseball"/><br/>
+Hockey <input type="checkbox"name="Hockey"/><br/>
+Basketball <input type="checkbox"name="Basketball"/><br/>
+<br/>
+Favorite Team:<br>
+<input type="text" name="Favorite Team">
+<br/><br/>
+<input type="SUBMIT" value="Click to Submit"/>
+<script type="text/javascript">
+	 if( sessionStorage.hits ){
+			sessionStorage.hits = Number(sessionStorage.hits) +1;
+	 }
+
+	 else{
+			sessionStorage.hits = 1;
+	 }
+	 document.write("Favorite Sport :" + sessionStorage.hits );
+</script>
+
+<p>Refresh the page to increase number of hits.</p>
+<p>Close the window and open it again and check the result.</p>
+</form>
+
+
+
+
+
+
+<div id="page" data-role="page" data-theme="a" data-add-back-btn="true">
+	<div data-role="header" data-theme="a">
+
+  </div>
+  	<div data-role="content">
+  		<ul data-role="listview" data-theme="c" data-filter="true">
+  			<li><a href="#football">Football</a></li>
+        <li><a href="#baseball">Baseball</a></li>
+  			<li><a href="#basketball">Basketball</a></li>
+  			<li><a href="#hockey">Hockey</a></li>
+				<li><a href="#grid">Grid</a></li>
+  		</ul>
+  	</div>
+  	<div data-role="footer" data-theme="a">
+  	  <h4>Nicko's Page &copy; 2018</h4>
+  	</div>
+  </div>
+</DIV>
+
+  <div id="football" data-role="page" data-theme="a" data-add-back-btn="true">
+  	<div data-role="header" data-theme="a" data-add-back-btn="true">
+  	  <h1>Football</h1>
+  	</div>
+  	<div data-role="content">
+  	  <h3>Minnesota Vikings</h3><br/>
+			<a href="http://minnesotavikings.com"><img src="http://www.nflview.com/nfl_wallpaper/minnesota_vikings_logo_1_nb7gn30u93_1280x1024.jpg" alt="Mountain View" style="width:200px;height:200px;"><a href/><img src/>
+  	  <br/><p>My favorite football team in the NFL are the Minnesota Vikings. I have been a huge fan since a young child and through good and bad, I will always be cheering for them. I just want them to win a Super Bowl!! SKOL! </p>
+  	</div>
+  	<div data-role="footer" data-theme="a">
+  	  <h4>Nicko's Page &copy; 2018</h4>
+  	</div>
+  </div><br/>
+
+  <div id="baseball" data-role="page" data-theme="a" data-add-back-btn="true">
+  	<div data-role="header" data-theme="a" data-add-back-btn="true">
+  		<h1>Baseball</h1>
+  	</div>
+  	<div data-role="content">
+  	  <h3>Minnesota Twins</h3><br/>
+			<a href="http://minnesotatwins.com"><img src="https://cdn.blueskytp.com/wp-content/uploads/2015/05/min_1200x630.jpg" alt="Mountain View" style="width:250px;height:200px;"><a href/><img src/>
+  	  <br/><p>My favorite baseball team in the MLB are the Minnesota Twins.  It has been great that they have won two World Series titles since I was born, I was very young though.  It is nice to see them succeeding again and I am hoping for more success in the future! </p>
+
+  	</div>
+  	<div data-role="footer" data-theme="a">
+  		<h4>Nicko's Page &copy; 2018</h4>
+  	</div>
+  </div><br/>
+
+  <div id="basketball" data-role="page" data-theme="a" data-add-back-btn="true">
+  	<div data-role="header" data-theme="a" data-add-back-btn="true">
+  		<h1>Basketball</h1>
+  	</div>
+  	<div data-role="content">
+  	  <h3>Minnesota Timberwolves</h3><br/>
+			<a href="http://minnesotatimberwolves.com"><img src="http://i.cdn.turner.com/drp/nba/timberwolves/sites/default/files/mtimberwolves_global.jpg" alt="Mountain View" style="width:200px;height:200px;"><a href/><img src/>
+  	  <br/><p> My favorite team in the NBA are the Minnesota Timberwolves.  It is very hard being such a big fan because they have not been a successful team in the league.  We have some hope with some young stars on the team this year and I can not wait until they are back in the playoffs and winning games! </p>
+
+        </div>
+  	<div data-role="footer" data-theme="a" >
+  	  <h4>Nicko's Page &copy; 2018</h4>
+  	</div>
+  </div><br/>
+
+  <div id="hockey" data-role="page" data-theme="a" data-add-back-btn="true">
+  	<div data-role="header" data-theme="a" data-add-back-btn="true">
+  		<h1>Hockey</h1>
+  	</div>
+    <div data-role="content">
+  	  <h3>Minnesota Wild</h3><br/>
+			<a href="http://minnesotawild.com"><img src="http://www.freelargeimages.com/wp-content/uploads/2015/04/Minnesota_Wild_Logo_04.jpg" alt="Mountain View" style="width:200px;height:200px;"><a href/><img src/>
+  	  <br/><p> My favorite team in the NHL are the Minnesota Wild.  They are a very consistant team and always making the playoffs. They just tend to blow it in the playoffs and get knocked out before the Stanley Cup.  Maybe luck will go there way soon and bring home a title! </p>
+  	</div>
+  	<div data-role="footer" data-theme="a">
+  		<h4>Nicko's Page &copy; 2018</h4>
+  	</div>
+  </div><br/>
+
+	<h1>Grid</h1>
+</div>
+<div data-role="content">
+	<div class="ui-grid-a">
+		<div class="ui-block-a"><div class="ui-bar ui-bar-a" style="height:20px">Minnesota Vikings</div></div>
+		<div class="ui-block-a"><div class="ui-bar ui-bar-a" style="height:20px">Minnesota Wild</div></div>
+		<div class="ui-block-a"><div class="ui-bar ui-bar-a" style="height:20px">Minnesota Timberwolves</div></div>
+		<div class="ui-block-a"><div class="ui-bar ui-bar-a" style="height:20px">Minnesota Twins</div></div>
+	</div><!-- /grid-a -->
+
+</div>
+
+<DIV align="left">
+<section id="box">
+<p> Enter your Information.</p>
+  <form action="form.php"method="post">
+  	<label for="fname">First Name:</label>
+  		<input type="text" name="fname" id="fname"data-clear-btn="true"><br/>
+  	<label for="lname">Last Name:</label>
+  		<input type="text" name="lname" id="lname"data-clear-btn="true"><br/>
+  	<label for="pnumber">Phone number:</label>
+  		<input type="text" name="pnumber" id="pnumber"data-clear-btn="true"><br/>
+    <label for="address">Address:</label>
+    		<input type="text" name="address" id="address"data-clear-btn="true"><br/>
+    <label for="email">Email:</label>
+        <input type="text" name="email" id="address"data-clear-btn="true"><br/>
+  		<input type="submit" value="Submit Button">
+      <input type="reset" value="Reset Button">
+  </form>
+</section>
+</DIV>
+
+
+
+
+
+
+
+
+
+
+  <p>&#169 NFL logo, NBA logo, MLB logo, NHL logo</>
+  </footer>
+
+
+
+
+</body>
+</html>
